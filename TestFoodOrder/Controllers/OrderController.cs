@@ -22,6 +22,12 @@ namespace TestFoodOrder.Controllers
             _priceCalculation = priceCalculation;
         }
 
+        /// <summary>
+        /// Api  to Cal Calulate total Price
+        /// </summary>
+        /// <param name="item"></param>
+        /// <returns></returns>
+
         [HttpPost("ItemTotal")]
         public async Task<double> ItemTotalPrice(List<Item> item)
         {
