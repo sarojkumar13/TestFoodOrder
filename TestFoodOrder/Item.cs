@@ -5,7 +5,6 @@ namespace TestFoodOrder
 {
     public class Item
     {
-        [Required]
         public long Id { get; set; }
 
         [Required]

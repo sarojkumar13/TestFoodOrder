@@ -25,6 +25,7 @@ namespace TestFoodOrder.Controllers
         [HttpPost("ItemTotal")]
         public async Task<double> ItemTotalPrice(List<Item> item)
         {
+
             return await _priceCalculation.ItemTotalPrice(item);
         }
     }
